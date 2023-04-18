@@ -1,0 +1,73 @@
+main {
+  background: #ececec;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  width: 300px;
+  height: 500px;
+  padding: 20px;
+  border-radius: 26px;
+  box-shadow: 7px 7px 20px;
+}
+main .title {
+  font-size: 36px;
+  font-weight: bold;
+}
+main .textarea-container {
+  position: relative;
+  width: 100%;
+  background-color: #cccccc;
+  border-radius: 10px;
+}
+main .textarea-container textarea {
+  background: transparent;
+  padding: 10px 10px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  resize: none;
+}
+main .textarea-container textarea:focus {
+  outline: none;
+}
+main .textarea-container textarea::-webkit-scrollbar {
+  display: none;
+}
+main .textarea-container .icon {
+  position: absolute;
+  font-size: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  cursor: pointer;
+}
+main .notes-container {
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 10px;
+  border-top: 2px solid rgb(116, 116, 116);
+}
+main .notes-container::-webkit-scrollbar {
+  display: none;
+}
+
+.note-enter {
+  opacity: 0;
+}
+
+.note-enter-active {
+  opacity: 1;
+  transition: opacity 500ms;
+}
+
+.note-exit {
+  opacity: 1;
+}
+
+.note-exit-active {
+  opacity: 0;
+  transition: opacity 500ms;
+}/*# sourceMappingURL=ToDoList.css.map */
